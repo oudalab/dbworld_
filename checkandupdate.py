@@ -93,7 +93,7 @@ def notification(message):
     webpage = message["webpage"]
     message = f"{subjecturl} {subject} {thehash} {webpage}"
     report = {"value1": message}
-    req = requests.post("https://maker.ifttt.com/trigger/dbworld_post/with/key/cqhdzjBquODIvTezwtIiv1", data=report)
+    req = requests.post("https://maker.ifttt.com/trigger/dbworld_tweet/with/key/cqhdzjBquODIvTezwtIiv1", data=report)
     print(req.text)
 
 
